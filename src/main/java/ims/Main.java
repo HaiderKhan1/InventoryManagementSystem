@@ -17,5 +17,7 @@ public class Main {
       if (quantity == 5) {
         System.out.println(true);
       }
+      product.updateOutPut();
+      System.out.println(product.Details());
     }
 }
