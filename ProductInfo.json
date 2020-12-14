@@ -1,0 +1,77 @@
+{ "roster":
+{
+  "students": [
+    {
+      "name": "Pebbles Flintstone",
+      "ID": "123456",
+      "courses":[
+        {
+          "id": 2430,
+          "status": "enrolled"
+        },
+                {
+          "id": 2520,
+          "status": "enrolled"
+        },
+                {
+          "id": 1300,
+          "status": "passed"
+        },
+      ]
+    },
+        {
+      "name": "Barney Rubble",
+      "ID": "998876",
+      "courses":[
+        {
+          "id": 2430,
+          "status": "enrolled"
+        },
+                {
+          "id": 2520,
+          "status": "enrolled"
+        },
+                {
+          "id": 1300,
+          "status": "passed"
+        },
+      ]
+    },
+        {
+      "name": "Wilma Flintstone",
+      "ID": "123456",
+      "courses":[
+        {
+          "id": 2430,
+          "status": "passed"
+        },
+                {
+          "id": 2520,
+          "status": "enrolled"
+        },
+                {
+          "id": 1300,
+          "status": "passed"
+        },
+      ]
+    }
+    ],
+
+  "courses": [
+    {
+      "id": 2430,
+      "name": "Object Oriented Programming",
+    },
+    {
+      "id": 2520,
+      "name": "Data Structures",
+    },
+        {
+      "id": 1300,
+      "name": "Intro to Programming",
+    },
+
+
+  ]
+}
+}
