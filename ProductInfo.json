@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "name": "Playstation 5",
+            "upc": "31026232",
+            "department": "Electronics",
+            "location": "12",
+            "price": "629",
+            "quantity": "0"
+        },
+        {
+          "name": "Xbox Series X",
+          "upc": "65783289",
+          "department": "Departmet",
+          "location": "72",
+          "price": "699",
+          "quantity": "4"
+        },
+        {
+          "name": "Doritos Sweet Chilly Heat",
+          "upc": "85847386",
+          "department": "Groccery",
+          "location": "11",
+          "price": "2.99",
+          "quantity": "600"
+        },
+        {
+          "name": "Doritos Nacho Cheese",
+          "upc": "89054789",
+          "department": "Groccery",
+          "location": "11",
+          "price": "2.99",
+          "quantity": "0"
+        },
+         {
+           "name": "Dewalt Iron",
+           "upc": "129884738",
+           "department": "Houseware and Domestics",
+           "location": "2",
+           "price": "69",
+           "quantity": "4"
+        },
+         {
+           "name": "Dwealt Drill Machine",
+           "upc": "75833085",
+           "department": "Hardware",
+           "location": "4",
+           "price": "129",
+           "quantity": "2"
+        },
+    ]
+}

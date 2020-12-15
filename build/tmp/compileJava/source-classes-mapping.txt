@@ -2,7 +2,7 @@ ims/UI.java
  ims.UI
 ims/Product.java
  ims.Product
-ims/Parser.java
- ims.Parser
 ims/Main.java
  ims.Main
+ims/Parser.java
+ ims.Parser
