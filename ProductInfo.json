@@ -1,77 +1,52 @@
-{ "roster":
 {
-  "students": [
-    {
-      "name": "Pebbles Flintstone",
-      "ID": "123456",
-      "courses":[
+    "products": [
         {
-          "id": 2430,
-          "status": "enrolled"
+            "name": "Playstation 5",
+            "upc": "31026232",
+            "department": "Electronics",
+            "location": "12",
+            "price": "629",
+            "quantity": "0"
         },
-                {
-          "id": 2520,
-          "status": "enrolled"
-        },
-                {
-          "id": 1300,
-          "status": "passed"
-        },
-      ]
-    },
         {
-      "name": "Barney Rubble",
-      "ID": "998876",
-      "courses":[
+          "name": "Xbox Series X",
+          "upc": "65783289",
+          "department": "Departmet",
+          "location": "72",
+          "price": "699",
+          "quantity": "4"
+        },
         {
-          "id": 2430,
-          "status": "enrolled"
+          "name": "Doritos Sweet Chilly Heat",
+          "upc": "85847386",
+          "department": "Groccery",
+          "location": "11",
+          "price": "2.99",
+          "quantity": "600"
         },
-                {
-          "id": 2520,
-          "status": "enrolled"
-        },
-                {
-          "id": 1300,
-          "status": "passed"
-        },
-      ]
-    },
         {
-      "name": "Wilma Flintstone",
-      "ID": "123456",
-      "courses":[
-        {
-          "id": 2430,
-          "status": "passed"
+          "name": "Doritos Nacho Cheese",
+          "upc": "89054789",
+          "department": "Groccery",
+          "location": "11",
+          "price": "2.99",
+          "quantity": "0"
         },
-                {
-          "id": 2520,
-          "status": "enrolled"
+         {
+           "name": "Dewalt Iron",
+           "upc": "129884738",
+           "department": "Houseware and Domestics",
+           "location": "2",
+           "price": "69",
+           "quantity": "4"
         },
-                {
-          "id": 1300,
-          "status": "passed"
+         {
+           "name": "Dwealt Drill Machine",
+           "upc": "75833085",
+           "department": "Hardware",
+           "location": "4",
+           "price": "129",
+           "quantity": "2"
         },
-      ]
-    }
-    ],
-
-  "courses": [
-    {
-      "id": 2430,
-      "name": "Object Oriented Programming",
-    },
-    {
-      "id": 2520,
-      "name": "Data Structures",
-    },
-        {
-      "id": 1300,
-      "name": "Intro to Programming",
-    },
-
-
-  ]
-}
+    ]
 }

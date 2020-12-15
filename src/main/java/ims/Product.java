@@ -52,7 +52,7 @@ public class Product {
     outPut += "Quantity: " + productQuantity + "\n";
   }
 
-  public String Details() {
+  public String productDetails() {
     return outPut;
   }
 
