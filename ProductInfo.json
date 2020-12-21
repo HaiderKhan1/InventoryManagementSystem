@@ -3,7 +3,7 @@
         {
             "name": "Playstation 5",
             "upc": "31026232",
-            "department": "Electronics",
+            "department": "electronics",
             "location": "12",
             "price": "629",
             "quantity": "0"
@@ -11,7 +11,7 @@
         {
           "name": "Xbox Series X",
           "upc": "65783289",
-          "department": "Departmet",
+          "department": "electronics",
           "location": "72",
           "price": "699",
           "quantity": "4"
@@ -19,7 +19,7 @@
         {
           "name": "Doritos Sweet Chilly Heat",
           "upc": "85847386",
-          "department": "Groccery",
+          "department": "groccery",
           "location": "11",
           "price": "2.99",
           "quantity": "600"
@@ -27,15 +27,23 @@
         {
           "name": "Doritos Nacho Cheese",
           "upc": "89054789",
-          "department": "Groccery",
+          "department": "groccery",
           "location": "11",
           "price": "2.99",
           "quantity": "0"
         },
+        {
+          "name": "Cheddar Chesse",
+          "upc": "89054678",
+          "department": "groccery",
+          "location": "13",
+          "price": "6.99",
+          "quantity": "49"
+        },
          {
            "name": "Dewalt Iron",
            "upc": "129884738",
-           "department": "Houseware and Domestics",
+           "department": "houseware",
            "location": "2",
            "price": "69",
            "quantity": "4"
@@ -43,10 +51,34 @@
          {
            "name": "Dwealt Drill Machine",
            "upc": "75833085",
-           "department": "Hardware",
+           "department": "hardware",
            "location": "4",
            "price": "129",
            "quantity": "2"
         },
+        {
+          "name": "Bed Sheets King Size",
+          "upc": "75834567",
+          "department": "houseware",
+          "location": "17",
+          "price": "29",
+          "quantity": "9"
+       },
+       {
+         "name": "Pillows",
+         "upc": "75833543",
+         "department": "housware",
+         "location": "9",
+         "price": "49.65",
+         "quantity": "30"
+      },
+      {
+        "name": "Ironing Board",
+        "upc": "12333085",
+        "department": "houseware",
+        "location": "11",
+        "price": "69.69",
+        "quantity": "5"
+     },
     ]
 }

@@ -13,6 +13,8 @@ import java.io.IOException;
 public class Parser {
   private ArrayList<Product> products = new ArrayList<Product>();
   private Map<Integer, Product> productsMap = new HashMap<Integer, Product>();
+  private ArrayList<String> departments = new ArrayList<String>();
+
 
   public Parser() {
 
@@ -37,17 +39,24 @@ public class Parser {
       Product newProduct = new Product(Integer.parseInt(upc), name, department, Integer.parseInt(location),
       Double.parseDouble(price), Integer.parseInt(quantity));
       products.add(newProduct);
+      departments.add(department);
       productsMap.put(Integer.parseInt(upc), newProduct);
     }
   }
+
 
   public ArrayList<Product> getProductArrayList() {
     return products;
   }
 
+  public ArrayList<String> getDepartmentsList() {
+    return departments;
+  }
+
   public Map<Integer, Product> getProductHashMap() {
     return productsMap;
   }
+
 
   public JSONObject loadJsonFile(String file) {
   JSONParser jsonparser = new JSONParser();

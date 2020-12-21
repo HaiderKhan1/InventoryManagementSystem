@@ -33,3 +33,8 @@ Features to Add:
  - Enter log in creds
  - Do everything a costumer can with a IMS +
  - add, remove and update item info ( quantity ) -> write the new data to a JSON
+
+
+HashMap<String, HashMap<>>
+  -> the string: name, upc, department
+  -> each corresponding hashmap stores that information.
