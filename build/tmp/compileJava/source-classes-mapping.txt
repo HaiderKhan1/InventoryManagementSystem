@@ -1,22 +1,22 @@
+ims/Manager.java
+ ims.Manager
 ims/Groccery.java
  Groccery
 ims/Hardware.java
  Hardware
-ims/Electronics.java
- Electronics
+ims/ProductCollections.java
+ ims.ProductCollections
 ims/UI.java
  ims.UI
 ims/Houseware.java
  Houseware
-ims/Product.java
- ims.Product
-ims/Parser.java
- ims.Parser
-ims/Manager.java
- ims.Manager
-ims/ProductCollections.java
- ims.ProductCollections
 ims/Main.java
  ims.Main
+ims/Parser.java
+ ims.Parser
+ims/Product.java
+ ims.Product
 ims/Costumer.java
  ims.Costumer
+ims/Electronics.java
+ Electronics

@@ -38,7 +38,6 @@ public class Costumer {
         imsState = false;
         break;
       }
-
       try {
         int upc = Integer.parseInt(input);
         upcLookup(upc);
@@ -53,14 +52,24 @@ public class Costumer {
   private void productLookUp(String input) {
     boolean departmentCase = products.checkDepartmnetList(input);
     if (departmentCase == true) {
-      ArrayList<Product> newProducts = new ArrayList<Product>();
-      newProducts = products.getProductsInDepartment(input);
-      if (newProducts != null) {
-        printDepartmentProductsList(newProducts);
-      } else {
-        System.out.println("The given product name or department was not found");
-      }
+      departmentCase(input);
+    } else {
+      nameLookup(input);
     }
+  }
+
+  private void departmentCase(String input) {
+    ArrayList<Product> newProducts = new ArrayList<Product>();
+    newProducts = products.getProductsInDepartment(input);
+    if (newProducts != null) {
+      printDepartmentProductsList(newProducts);
+    } else {
+      System.out.println("The given product name or department was not found");
+    }
+  }
+
+  private void nameLookup(String input) {
+
   }
 
   private void printDepartmentProductsList(ArrayList<Product> displayProducts) {
@@ -82,10 +91,6 @@ public class Costumer {
       System.out.println(product.productDetails());
     } else {
     System.out.println("Product not found, the provided UPC is incorrect");
-
     }
-
   }
-
-
 }

@@ -6,7 +6,6 @@ public class Main {
       Parser parser = new Parser("./ProductInfo.json");
       ProductCollections products = new ProductCollections(parser);
       Costumer costumer = new Costumer(products);
-      Manager manager = new Manager();
 
     }
 }

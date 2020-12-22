@@ -38,3 +38,14 @@ Features to Add:
 HashMap<String, HashMap<>>
   -> the string: name, upc, department
   -> each corresponding hashmap stores that information.
+
+
+Search algorithm:
+for example: Doritos
+HashMap<String (Name), Product (Object)>
+  -> first do a direct name search from the hash map, if found, add that to the arraylist and return the rest of the items in the department
+  -> break down the input into a String array,
+    -> compare each element of the string array to the string array in the hashmap, if any match add it to the arraylist
+
+Doritos Sweet Chilly Heat
+Doritos cheese

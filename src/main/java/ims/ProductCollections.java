@@ -10,10 +10,14 @@ public class ProductCollections {
 
   public ProductCollections(Parser parser) {
     this.parsedProducts = parser;
+    setProductList();
     setDepartmentList();
     setProductUPChash();
-    setProductList();
     sortProductstoDepartments();
+  }
+
+  private void setProductList() {
+    this.products = parsedProducts.getProductArrayList();
   }
 
   private void sortProductstoDepartments() {
@@ -29,15 +33,15 @@ public class ProductCollections {
   }
 
   private void setDepartmentList() {
-    this.departmentsList = parsedProducts.getDepartmentsList();
+    for (Product i: products){
+      departmentsList.add(i.getDepartment());
+    }
   }
 
   private void setProductUPChash() {
-    this.productUPCHash = parsedProducts.getProductHashMap();
-  }
-
-  private void setProductList() {
-    this.products = parsedProducts.getProductArrayList();
+    for (Product i: products) {
+      productUPCHash.put(i.getUPC(), i);
+    }
   }
 
   public Product getProductUPC(int upc) {
