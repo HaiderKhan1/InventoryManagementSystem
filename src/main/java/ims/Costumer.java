@@ -38,6 +38,8 @@ public class Costumer {
         imsState = false;
         break;
       }
+      System.out.println("Your search: " + input);
+      System.out.println("");
       try {
         int upc = Integer.parseInt(input);
         upcLookup(upc);
@@ -62,17 +64,66 @@ public class Costumer {
     ArrayList<Product> newProducts = new ArrayList<Product>();
     newProducts = products.getProductsInDepartment(input);
     if (newProducts != null) {
-      printDepartmentProductsList(newProducts);
+      printProductList(newProducts);
+    } else {
+      System.out.println("The given product name or department was not found");
+    }
+  }
+
+  private void departmentCase(Product product, String input) {
+    ArrayList<Product> newProducts = new ArrayList<Product>();
+    newProducts = products.getProductsInDepartment(input);
+    if (newProducts != null) {
+      newProducts.remove(product);
+      printProductList(newProducts);
     } else {
       System.out.println("The given product name or department was not found");
     }
   }
 
   private void nameLookup(String input) {
+    Product lookup = products.getProductFromName(input);
+    boolean searchResult = false;
+    ArrayList<Product> indirectResult = new ArrayList<Product>();
 
+    if (lookup != null) {
+      searchResult = true;
+      System.out.println(lookup.productDetails());
+      altChoices(lookup, lookup.getDepartment(), searchResult);
+    } else {
+      indirectResult = products.findProductIndirect(input);
+        if (indirectResult != null) {
+          searchResult = true;
+          System.out.println("Found Products: ");
+          System.out.println("");
+          printProductList(indirectResult);
+          altChoices(indirectResult, searchResult);
+        } else {
+          System.out.println("Sorry we couldn't find the product you're looking for");
+        }
+    }
   }
 
-  private void printDepartmentProductsList(ArrayList<Product> displayProducts) {
+  private void altChoices(ArrayList<Product> results, boolean searchResult) {
+    if (searchResult) {
+      System.out.println("<----------- Also take a look at the following products ---------------->");
+      departmentCase(results.get(0).getDepartment());
+    }
+  }
+
+  private void altChoices(Product lookup, String department, boolean result) {
+    if (result == true) {
+    System.out.println("<----------- Also take a look at the following products ---------------->");
+    departmentCase(lookup, department);
+
+  } else {
+    System.out.println("Sorry we could not find the product");
+    System.out.println("Here's a list a products we do have currently, hope it helps :)");
+    departmentCase(department);
+    }
+  }
+
+  private void printProductList(ArrayList<Product> displayProducts) {
     for (Product i: displayProducts) {
       System.out.println(i.productDetails());
     }
